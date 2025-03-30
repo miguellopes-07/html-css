@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midio.ico" type="image/x-icon">
+
+    <title>Midias Em HTML5</title>
+
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Abra esse site em diferentes dispositivos ou aumente e diminua o tamanho da janela do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="image/luffy-p.jpeg" type="image/jpeg">
+        <source media="(max-width: 1050px )" srcset="image/luffy-m.jpeg" type="image/jpeg">
+        <img src="image/luffy-g.jpeg" alt="imagem do Luffy Gear 5">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="image/homem-aranha-p.jpeg" type="image/jpeg">
+        <source media="(max-width: 1050px )" srcset="image/homem-aranha-m.jpeg" type="image/jpeg">
+        <img src="image/homem-aranha-g.jpeg" alt="Homem Aranha">
+    </picture>
+
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/sou-o-homem-aranha.mpeg" type="audio/mpeg">
+        <p>Seu navegador não é compativel com o tipo de audio <a href="midia/sou-o-homem-aranha.mpeg" download="sou-o-homem-aranha.mpeg" type="audio/mpeg"></a></p>
+    </audio>
+</body>
+
+</html>

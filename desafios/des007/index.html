@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="camera.ico" type="image/x-icon">
+    <title>Imagem Flexivel</title>
+   
+</head>
+<body>
+    <h1>Imagem Flexivel</h1>
+    <p>Você está vendo a imagem completa? Experimente aumentar o tamanho da sua janela, para aproveitar a melhor experiência</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="horizon-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px )" srcset="horizon-m.jpg" type="image/jpg">
+        <img src="horizon-g.jpg" alt="horizon">
+    </picture>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family:'bigpopa' ;
+            src: url('fontizinha/MachineryScript_PERSONAL_USE_ONLY.otf') format('Opentype');
+            /*
+            tipos de format()
+            - Opentype (otf)
+            - truetype (ttf) 
+            - embedded-opentype
+            - truetype-att (Apple Advanced typography)
+            - SVG
+            */
+        }
+        @font-face {
+            font-family: 'popa';
+            src: url(font/littlebird.ttf);
+        }
+        body{
+            font-family:'bigpopa', Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+        h1{
+            font-family:  'popa','Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In maxime quas, rerum consectetur necessitatibus obcaecati, veniam eligendi quis qui molestias possimus ab ex aperiam architecto vel alias omnis odio repellat.</p>
+    
+</body>
+</html>
